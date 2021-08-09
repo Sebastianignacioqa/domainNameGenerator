@@ -1,20 +1,22 @@
-let pronoun = ["the", "our"];
-let adj = ["great", "big"];
-let noun = ["jogger", "racoon"];
+let pronoun = ["the", "our","your"];
+let adj = ["great", "big","awesome"];
+let noun = ["jogger", "racoon","mouse"];
 
 let generadorDominio = (pronoun, adj, noun) => {
-
+let dominio = [];
  for (let a in pronoun) {
     
    for (let b in adj) {
       
     for (let c in noun) {
         
-      let dominio = pronoun[a]+adj[b]+noun[c]+".com"
-      console.log(dominio) 
+      dominio = pronoun[a]+adj[b]+noun[c]+".com";
+      console.log(dominio)
     }
   }
 }
+return "No hay más dominios disponibles"
 }
 
 console.log(generadorDominio(pronoun,adj,noun))
+
