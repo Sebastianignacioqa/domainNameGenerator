@@ -1,14 +1,19 @@
-let generarDominio = () => {
-  let pronoun = ["the", "our"];
-  let adj = ["great", "big"];
-  let noun = ["jogger", "racoon"];
+let pronoun = ["the", "our"];
+let adj = ["great", "big"];
+let noun = ["jogger", "racoon"];
+let comb1 = []
+let comb2 = []
+let comb3 = []
 
-  let ipronoun = Math.floor(Math.random() * pronoun.length);
-  let iadj = Math.floor(Math.random() * adj.length);
-  let inoun = Math.floor(Math.random() * noun.length);
-
-  return pronoun[ipronoun]+adj[iadj]+noun[inoun]+".com";
-};
-
-
-console.log(generarDominio())
+ for (let a in pronoun) {
+    
+   for (let b in adj) {
+      
+    for (let c in noun) {
+        
+      let dominio = pronoun[a]+adj[b]+noun[c]+".com"
+      console.log(dominio)
+        
+    }
+  }
+}
