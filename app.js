@@ -1,9 +1,8 @@
 let pronoun = ["the", "our"];
 let adj = ["great", "big"];
 let noun = ["jogger", "racoon"];
-let comb1 = []
-let comb2 = []
-let comb3 = []
+
+let generadorDominio = (pronoun, adj, noun) => {
 
  for (let a in pronoun) {
     
@@ -12,8 +11,10 @@ let comb3 = []
     for (let c in noun) {
         
       let dominio = pronoun[a]+adj[b]+noun[c]+".com"
-      console.log(dominio)
-        
+      console.log(dominio) 
     }
   }
 }
+}
+
+console.log(generadorDominio(pronoun,adj,noun))
