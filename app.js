@@ -15,8 +15,7 @@ let dominio = [];
     }
   }
 }
-return "No hay más dominios disponibles"
 }
 
-console.log(generadorDominio(pronoun,adj,noun))
+generadorDominio(pronoun,adj,noun)
 
